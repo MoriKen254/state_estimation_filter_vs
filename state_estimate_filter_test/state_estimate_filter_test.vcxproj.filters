@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\model">
+      <UniqueIdentifier>{65e66098-8631-4cc5-96ba-5a5e03f0fe8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\estimation">
+      <UniqueIdentifier>{5ba56fd4-2005-40ca-a179-dd0bb52c8b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\estimation\kalman_filter">
+      <UniqueIdentifier>{13a7d7fc-6059-40ac-a5d3-e807b8b94b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\estimation\partile_filter">
+      <UniqueIdentifier>{0685de21-d976-4cc6-b657-2ff43690dd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\distribution">
+      <UniqueIdentifier>{abd04fad-2fcc-40d9-a7ec-a74e03887db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\factory">
+      <UniqueIdentifier>{43ecbd4a-8a7c-4948-b8da-b4acc0a353fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\estimation\partile_filter\resampling">
+      <UniqueIdentifier>{e7728e6f-5bf2-4e10-a165-b3535e140885}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="state_estimate_filter_test.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\state_space_model.cpp">
+      <Filter>ソース ファイル\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\model_equation.cpp">
+      <Filter>ソース ファイル\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\point_estimation.cpp">
+      <Filter>ソース ファイル\estimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\state_estimate_filter.cpp">
+      <Filter>ソース ファイル\estimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\extended_kalman_filter.cpp">
+      <Filter>ソース ファイル\estimation\kalman_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\linear_kalman_filter.cpp">
+      <Filter>ソース ファイル\estimation\kalman_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\particle_filter.cpp">
+      <Filter>ソース ファイル\estimation\partile_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\probability_distribution.cpp">
+      <Filter>ソース ファイル\distribution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\normal_distribution.cpp">
+      <Filter>ソース ファイル\distribution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\particle_distribution.cpp">
+      <Filter>ソース ファイル\distribution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\particle.cpp">
+      <Filter>ソース ファイル\estimation\partile_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\unscented_kalman_filter.cpp">
+      <Filter>ソース ファイル\estimation\kalman_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\state_estimater_factory.cpp">
+      <Filter>ソース ファイル\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\low_variance_sampling.cpp">
+      <Filter>ソース ファイル\estimation\partile_filter\resampling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\state_estimate_filter\truth_observation_generator.cpp">
+      <Filter>ソース ファイル\estimation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
